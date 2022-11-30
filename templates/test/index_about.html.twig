@@ -1,0 +1,190 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Travel Agency
+{% endblock %}
+
+{% block body %}
+	<style>
+
+
+		header {
+			background-color: #f0f8ff;
+		}
+
+		.logo {
+			width: 150px;
+		}
+
+		.nav-link {
+			color: black;
+			font-size: 1.2em;
+			font-family: "Verdana", Helvetica, sans-serif;
+
+		}
+		.nav-item {
+			padding: 0 5px;
+		}
+
+
+		.outer-container {
+			display: flex;
+			justify-content: space-around;
+			padding: 50px 0;
+			width: 100%;
+			align-items: center;
+			flex-wrap: wrap;
+			/* justify-content: space-between; */
+		}
+
+
+		.text-black {
+
+			color: black;
+			font-size: 6em;
+			font-family: "Verdana", Helvetica, sans-serif;
+		}
+		.text-black-small {
+
+			color: black;
+			font-size: 1em;
+			font-family: "Verdana", Helvetica, sans-serif;
+		}
+
+		.container2 {
+			flex-basis: 40%;
+
+		}
+		.content-about {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.content-about img {
+			width: 100%;
+			height: 100%;
+		}
+
+		/* * {
+		box-sizing: border-box
+	} */
+
+		/* Slideshow container */
+		/* .slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	}
+ */
+		/* Hide the images by default */
+		/* .mySlides {
+		display: none;
+	} */
+
+		/* Next & previous buttons */
+		/* .prev,
+	.next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	} */
+
+		/* Position the "next button" to the right */
+		/* .next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	} */
+
+		/* On hover, add a black background color with a little bit see-through */
+		/* .prev:hover,
+	.next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	} */
+
+		/* Caption text */
+		/* .text {
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+	} */
+
+		/* Number text (1/3 etc) */
+		/* .numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	} */
+
+		/* The dots/bullets/indicators */
+		/* .dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
+
+	.active,
+	.dot:hover {
+		background-color: #717171;
+	} */
+
+		/* Fading animation */
+		/* .fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+		from {
+			opacity: .4
+		}
+		to {
+			opacity: 1
+		}
+	} */
+	</style>
+	<header>
+		<div class="outer-container">
+			<div class="container2">
+				<h1 class="text-black">
+					<b>This is
+						<br>
+						Wanderlust</b>
+				</h1>
+			</div>
+			<div class="container2">
+				<p class="text-black-small">"Since 1975, Wanderlust has been focused on bringing our customers the best in esteem and quality travel game plans. We are enthusiastic about movement and sharing the world’s marvels on the relaxation travel side, and giving corporate explorers hello there contact administrations to encourage their business travel needs. 
+																																																																																																																																																																																																																																					            We’re a worker-claimed travel organization secured by our qualities, trustworthiness, and commitment to client benefit. Our honor-winning organization reliably positions as a standout amongst other offices in the nation (Travel Weekly, Business Travel Weekly), and is the best individual from the renowned Signature Travel Network, an overall association enabling us to give our clients unmatched advantages.
+																																																																																																																																																																																																																																					            We know the development and accomplishment of our organization relies on satisfying our customer’s needs each day. That is additionally our guarantee."
+
+				</p>
+			</div>
+		</div>
+
+
+	</header>
+	<div class="content-about">
+		<div><img class="image-left" src="{{ asset("loro.jpeg") }}"></div>
+
+		<div><img class="image-center" src="{{ asset("table.jpeg") }}"></div>
+		<div><img class="image-right" src="{{ asset("office.jpeg")}}"></div>
+	</div>
+{% endblock %}

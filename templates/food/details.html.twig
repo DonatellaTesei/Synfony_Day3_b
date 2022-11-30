@@ -26,9 +26,8 @@
 	<div class="container">
 		<div class="row row-cols-3">
 			<div class="card" style="width: 18rem;">
-				<div
-					class="card-body">
-					{# <h5 class="card-title">>{{ food.id }}</h5> #}
+				<div class="card-body">
+					<img src="{{ asset('pictures/' ~ food.picture)}}" alt="" width="100%">
 					<p class="card-text">
 						<b>{{ food.name }}</b>
 					</p>
@@ -40,6 +39,9 @@
 					</p>
 					<p class="card-text">Allergens:
 						{{ food.allergenes }}</p>
+					<p class="card-text">Status:
+						{{ food.fk_status.name }}</p>
+
 				</div>
 			</div>
 		</div>

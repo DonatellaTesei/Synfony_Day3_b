@@ -31,14 +31,12 @@
 		<div class="row row-cols-3">
 			{% for food in foods %}
 				<div class="card" style="width: 18rem;">
-					<div
-						class="card-body">
+					<div class="card-body">
 						{# <h5 class="card-title">>{{ trips.id }}</h5> #}
-						<p class="card-text">
+						<!--object-fit -->
+						<img src="{{ asset('pictures/' ~ food.picture)}}" alt="" width="100%"> <p class="card-text">
 							<b>{{ food.name }}</b>
 						</p>
-						<p class="card-text">{{ food.picture }}</p>
-						<!--how to load the picture? -->
 						<p class="card-text">{{ food.description }}</p>
 						<a href="/details/{{ food.id }} " class=" btn btn-success">Details</a>
 						<a href="/edit/{{ food.id }} " class=" btn btn-warning">Edit</a>
