@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+{% block title %}{% endblock %}
+{% block body %}
+	<style>
+		h1 {
+			padding-top: 100px;
+			padding-left: 70px;
+			color: white;
+			font-size: 4em;
+			font-family: "Verdana", Helvetica, sans-serif;
+			text-align: left;
+		}
+
+		body {
+			background-image: url('{{ asset('backGround.jpg') }}');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		.container {
+			padding: 50px;
+		}
+	</style>
+	<h1>OUR MENU</h1>
+	<br>
+	<div class="container">
+		<div class="row row-cols-3">
+			<div class="card" style="width: 18rem;">
+				<div
+					class="card-body">
+					{# <h5 class="card-title">>{{ food.id }}</h5> #}
+					<p class="card-text">
+						<b>{{ food.name }}</b>
+					</p>
+					<p class="card-text">{{ food.picture }}</p>
+					<!-- how to load the picture? -->
+					<p class="card-text">{{ food.description }}</p>
+					<p class="card-text">{{ food.price }}
+						Euro
+					</p>
+					<p class="card-text">Allergens:
+						{{ food.allergenes }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
